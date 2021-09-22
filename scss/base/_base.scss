@@ -1,0 +1,76 @@
+// Colors
+
+// Primary
+
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+
+// Accent
+
+$blue: hsl(248, 32%, 49%);
+
+// Neutral
+
+$dark-blue: hsl(249, 10%, 26%);
+$greyish-lue: hsl(246, 25%, 77%);
+$white: #fff;
+$white-2: rgba(255, 255, 255, 0.75);
+
+// Responsive breakpoints
+
+$bp-large-desktop: 68.75em; // 1100px
+$bp-desktop: 56.25em; // 900px
+$bp-tablet: 37.5em; // 600px
+
+//Resets & relative font sizing
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 50%;
+
+  @media only screen and (min-width: $bp-tablet) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (min-width: $bp-desktop) {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding: 10rem 2rem;
+
+  color: $white;
+  background: url(../../img/bg-intro-mobile.png), $red;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.attribution {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 5rem 0;
+  color: $white-2;
+
+  &__link {
+    color: $white;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
