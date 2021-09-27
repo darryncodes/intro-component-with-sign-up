@@ -55,7 +55,7 @@ body {
   padding: 5rem 2rem;
 
   color: $white-2;
-  background: url(../../img/bg-intro-mobile.png), $red;
+  background: url(../img/bg-intro-mobile.png), $red;
 
   display: flex;
   flex-direction: column;
@@ -64,7 +64,7 @@ body {
   min-height: 100vh;
 
   @media only screen and (min-width: $bp-tablet) {
-    background: url(../../img/bg-intro-desktop.png), $red;
+    background: url(../img/bg-intro-desktop.png), $red;
   }
 }
 

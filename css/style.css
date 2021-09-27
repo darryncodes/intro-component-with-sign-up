@@ -29,7 +29,7 @@ body {
   font-size: 1.5rem;
   padding: 5rem 2rem;
   color: rgba(255, 255, 255, 0.75);
-  background: url(../../img/bg-intro-mobile.png), #ff7a7a;
+  background: url(../img/bg-intro-mobile.png), #ff7a7a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +47,7 @@ body {
 }
 @media only screen and (min-width: 37.5em) {
   body {
-    background: url(../../img/bg-intro-desktop.png), #ff7a7a;
+    background: url(../img/bg-intro-desktop.png), #ff7a7a;
   }
 }
 
