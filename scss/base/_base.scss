@@ -4,6 +4,8 @@
 
 $red: hsl(0, 100%, 74%);
 $green: hsl(154, 59%, 51%);
+$dark-green: #2eb47a;
+$light-green: #89e1bb;
 
 // Accent
 
@@ -12,7 +14,8 @@ $blue: hsl(248, 32%, 49%);
 // Neutral
 
 $dark-blue: hsl(249, 10%, 26%);
-$greyish-lue: hsl(246, 25%, 77%);
+$greyish-blue: hsl(246, 25%, 77%);
+$grey: #e0e0e0;
 $white: #fff;
 $white-2: rgba(255, 255, 255, 0.75);
 
@@ -48,16 +51,21 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
-  padding: 10rem 2rem;
+  font-size: 1.5rem;
+  padding: 5rem 2rem;
 
-  color: $white;
+  color: $white-2;
   background: url(../../img/bg-intro-mobile.png), $red;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
+
+  @media only screen and (min-width: $bp-tablet) {
+    background: url(../../img/bg-intro-desktop.png), $red;
+  }
 }
 
 .attribution {

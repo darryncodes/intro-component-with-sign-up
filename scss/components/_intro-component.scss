@@ -1,1 +1,139 @@
-@use "../base/base" as *;
+@use '../base/base' as *;
+
+main {
+  max-width: 35rem;
+
+  @media only screen and (min-width: $bp-desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100rem;
+    grid-column-gap: 6rem;
+  }
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 5rem;
+
+  @media only screen and (min-width: $bp-desktop) {
+    align-self: center;
+    text-align: left;
+  }
+
+  &__heading {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $white;
+    margin-bottom: 3rem;
+  }
+
+  &__content {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+
+.offer {
+  background-color: $blue;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.15);
+
+  &__content {
+    padding: 0 4.5rem;
+  }
+
+  &__highlight {
+    color: $white;
+    font-weight: 700;
+  }
+}
+
+.form {
+  background-color: $white;
+  border-radius: 1rem;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+
+  &__group {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.4rem;
+    display: block;
+    border-radius: 0.5rem;
+    border: 1px solid $grey;
+    padding: 1.5rem;
+  }
+
+  &__btn {
+    background-color: $green;
+    color: $white;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 1.5rem;
+    box-shadow: 0 4px 0 $dark-green;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+
+    &:hover {
+      background-color: $light-green;
+    }
+  }
+
+  &__content {
+    color: $greyish-blue;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 0 4.5rem;
+
+    &--highlight {
+      color: $red;
+    }
+  }
+}
+
+.success-icon,
+.error-icon {
+  visibility: hidden;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+}
+
+small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: $red;
+}
+
+.form__group.success input {
+  border: 1px solid $green;
+}
+.form__group.error input {
+  border: 1px solid $red;
+}
+
+.form__group.success .success-icon,
+.form__group.error .error-icon,
+.form__group.error small {
+  visibility: visible;
+}
