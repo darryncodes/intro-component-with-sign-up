@@ -28,7 +28,7 @@ body {
   font-weight: 400;
   font-size: 1.5rem;
   padding: 5rem 2rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.85);
   background: url(../img/bg-intro-mobile.png), #ff7a7a;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,7 +55,7 @@ body {
   text-align: center;
   font-size: 1.4rem;
   margin: 5rem 0;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.85);
 }
 .attribution__link {
   color: #fff;
@@ -85,6 +85,7 @@ main {
     -ms-flex-item-align: center;
         align-self: center;
     text-align: left;
+    margin-bottom: 0;
   }
 }
 .intro__heading {
@@ -93,6 +94,11 @@ main {
   line-height: 1.2;
   color: #fff;
   margin-bottom: 3rem;
+}
+@media only screen and (min-width: 56.25em) {
+  .intro__heading {
+    font-size: 5rem;
+  }
 }
 .intro__content {
   font-size: 2rem;
