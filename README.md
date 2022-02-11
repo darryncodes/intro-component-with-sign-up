@@ -35,7 +35,6 @@ Users should be able to:
 
 - [GitHub repo](https://github.com/darryncodes/intro-component-with-sign-up)
 - [Solution URL](https://darryncodes.github.io/intro-component-with-sign-up/)
-- [Live Site URL](https://www.darryncodes.co.uk/pages/intro-component-with-sign-up.html)
 
 ## My process
 
